@@ -3,67 +3,560 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Umesh Jangid - Portfolio</title>
+  <title>Umesh Jangid - Mobile Engineering Lead</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3b82f6',
+            secondary: '#1e40af',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans">
-  <header class="bg-indigo-600 text-white p-6 text-center shadow-lg">
-    <h1 class="text-3xl font-bold">Umesh Jangid</h1>
-    <p class="mt-2">Mobile Engineering Lead | Android · iOS · Flutter · React Native</p>
-  </header>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center space-x-4">
+          <h1 class="text-xl font-bold text-primary">Umesh Jangid</h1>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#about" class="text-gray-600 hover:text-primary transition duration-300">About</a>
+          <a href="#experience" class="text-gray-600 hover:text-primary transition duration-300">Experience</a>
+          <a href="#projects" class="text-gray-600 hover:text-primary transition duration-300">Projects</a>
+          <a href="#skills" class="text-gray-600 hover:text-primary transition duration-300">Skills</a>
+          <a href="#contact" class="text-gray-600 hover:text-primary transition duration-300">Contact</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button class="text-gray-600 hover:text-primary">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-  <main class="max-w-4xl mx-auto p-6">
-    <!-- About -->
-    <section id="about" class="my-8">
-      <h2 class="text-2xl font-semibold border-b-2 border-indigo-600 inline-block">About Me</h2>
-      <p class="mt-4">
-        I am a Mobile Engineering Lead with expertise in Android, iOS, Flutter, and React Native.
-        Passionate about creating scalable, robust, and testable mobile apps.  
-        I love solving technical challenges and mentoring teams to deliver high-quality software.
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-primary to-secondary text-white py-32 mt-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <div class="mb-8">
+        <div class="w-32 h-32 bg-white bg-opacity-20 rounded-full mx-auto mb-6 flex items-center justify-center">
+          <i class="fas fa-mobile-alt text-4xl"></i>
+        </div>
+      </div>
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I'm Umesh Jangid</h1>
+      <p class="text-xl md:text-2xl mb-6 text-blue-100">Mobile Engineering Lead from India</p>
+      <p class="text-lg mb-8 max-w-3xl mx-auto text-blue-100">
+        I believe in non-linear and continuous learning. Currently working as a Mobile Engineer, passionate about creating scalable mobile applications and improving development experiences.
       </p>
-    </section>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#projects" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+          View My Work
+        </a>
+        <a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition duration-300">
+          Get In Touch
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Education -->
-    <section id="education" class="my-8">
-      <h2 class="text-2xl font-semibold border-b-2 border-indigo-600 inline-block">Education</h2>
-      <ul class="list-disc pl-6 mt-4 space-y-2">
-        <li><strong>B.Tech (Computer Science)</strong> – Rajasthan Technical University, Kota</li>
-        <li><strong>Schooling</strong> – Jaipur</li>
-      </ul>
-    </section>
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+        <div class="w-24 h-1 bg-primary mx-auto"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-2xl font-semibold mb-4 text-gray-900">My Philosophy</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            "There is no shortcut to getting the best" - My personal belief that drives everything I do.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <i class="fas fa-telescope text-primary mt-1 mr-3"></i>
+              <p class="text-gray-600">Interested in Mobile Application domain, Frontend Domain - Currently focusing on Custom Lib/SDK and Plugins (Fintech - Apache Cordova-based Application), React Native, React</p>
+            </div>
+            <div class="flex items-start">
+              <i class="fas fa-seedling text-primary mt-1 mr-3"></i>
+              <p class="text-gray-600">Work mainly on Hybrid Apps & Native Mobile Applications</p>
+            </div>
+            <div class="flex items-start">
+              <i class="fas fa-handshake text-primary mt-1 mr-3"></i>
+              <p class="text-gray-600">Looking to collaborate on Machine Learning, AI for Mobile Application development and Other related open sources</p>
+            </div>
+            <div class="flex items-start">
+              <i class="fas fa-comments text-primary mt-1 mr-3"></i>
+              <p class="text-gray-600">Love to help with challenging problems in mobile applications (hybrid/native) domain & frontend domain</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-2xl font-semibold mb-6 text-gray-900">Current Focus</h3>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <div class="w-3 h-3 bg-primary rounded-full mr-3"></div>
+              <span class="text-gray-700">Custom Libraries & SDK Development</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-3 h-3 bg-primary rounded-full mr-3"></div>
+              <span class="text-gray-700">Fintech Application Architecture</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-3 h-3 bg-primary rounded-full mr-3"></div>
+              <span class="text-gray-700">React Native & Apache Cordova</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-3 h-3 bg-primary rounded-full mr-3"></div>
+              <span class="text-gray-700">Development Experience Improvement</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Experience -->
-    <section id="experience" class="my-8">
-      <h2 class="text-2xl font-semibold border-b-2 border-indigo-600 inline-block">Experience</h2>
-      <ul class="mt-4 space-y-4">
-        <li>
-          <strong>Team Lead – Netspend India</strong><br/>
-          Leading fintech app development (React Native, Cordova migration, hybrid architecture).
-        </li>
-        <li>
-          <strong>Senior Engineer – Fintech App</strong><br/>
-          Built scalable apps, integrated Braze notifications, biometrics, accessibility features.
-        </li>
-      </ul>
-    </section>
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Experience</h2>
+        <div class="w-24 h-1 bg-primary mx-auto"></div>
+      </div>
+      <div class="space-y-8">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+            <h3 class="text-2xl font-semibold text-gray-900">Mobile Engineering Lead</h3>
+            <span class="text-primary font-semibold">Current</span>
+          </div>
+          <p class="text-gray-600 mb-4">Leading mobile engineering initiatives across multiple platforms</p>
+          <div class="grid md:grid-cols-2 gap-4">
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Team Leadership & Mentoring</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Architecture Design</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Cross-platform Development</li>
+            </ul>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Performance Optimization</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Code Review & Quality</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Technical Strategy</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+            <h3 class="text-2xl font-semibold text-gray-900">Team Lead - Netspend India</h3>
+            <span class="text-gray-500">Previous Role</span>
+          </div>
+          <p class="text-gray-600 mb-4">Led fintech app development with focus on React Native and Cordova migration</p>
+          <div class="grid md:grid-cols-2 gap-4">
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Hybrid Architecture Design</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Cordova to React Native Migration</li>
+            </ul>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Fintech Security Implementation</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Team Coordination</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Skills -->
-    <section id="skills" class="my-8">
-      <h2 class="text-2xl font-semibold border-b-2 border-indigo-600 inline-block">Skills</h2>
-      <p class="mt-4">Android, iOS, Flutter, React Native, Java, Kotlin, Swift, TypeScript, Node.js</p>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Selected Work</h2>
+        <div class="w-24 h-1 bg-primary mx-auto"></div>
+        <p class="text-gray-600 mt-4">Showcasing impactful projects across different domains</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Government Project -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-shield-alt text-blue-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold">RAJCOP Citizen App</h3>
+          </div>
+          <p class="text-gray-600 mb-4">Rajasthan Police - State Government Application</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Government</span>
+            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Public Service</span>
+          </div>
+        </div>
 
-    <!-- Contact -->
-    <section id="contact" class="my-8">
-      <h2 class="text-2xl font-semibold border-b-2 border-indigo-600 inline-block">Contact</h2>
-      <p class="mt-4">📧 <a href="mailto:umesh@example.com" class="text-indigo-600">umesh@example.com</a></p>
-      <p>🔗 <a href="https://www.linkedin.com/in/umeshjangid" class="text-indigo-600">LinkedIn</a></p>
-      <p>💻 <a href="https://github.com/umeshjangid" class="text-indigo-600">GitHub</a></p>
-    </section>
-  </main>
+        <!-- Fintech Project -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-credit-card text-green-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold">Netspend</h3>
+          </div>
+          <p class="text-gray-600 mb-4">Fintech application with advanced security features</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Fintech</span>
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">React Native</span>
+          </div>
+        </div>
 
-  <footer class="bg-gray-200 text-center p-4 mt-8">
-    <p>&copy; 2025 Umesh Jangid</p>
+        <!-- Communication App -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-envelope text-red-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold">Rajmail</h3>
+          </div>
+          <p class="text-gray-600 mb-4">Mailing app with Indian language support</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">Communication</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Multilingual</span>
+          </div>
+        </div>
+
+        <!-- Domain Platform -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-globe text-purple-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold">godil.in</h3>
+          </div>
+          <p class="text-gray-600 mb-4">Multilingual domain buying application</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">E-commerce</span>
+            <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Multilingual</span>
+          </div>
+        </div>
+
+        <!-- Healthcare -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-brain text-teal-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold">NeuroEquilibrium</h3>
+          </div>
+          <p class="text-gray-600 mb-4">Healthcare technology application</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Healthcare</span>
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Technology</span>
+          </div>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-laptop text-indigo-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold">Waizu</h3>
+          </div>
+          <p class="text-gray-600 mb-4">Device Management Enterprise Solution</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Enterprise</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Device Mgmt</span>
+          </div>
+        </div>
+
+        <!-- Additional Projects Row -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-database text-yellow-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold">Datamail</h3>
+          </div>
+          <p class="text-gray-600 mb-4">Data management and communication platform</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Data</span>
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Platform</span>
+          </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-users text-pink-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold">Suitably</h3>
+          </div>
+          <p class="text-gray-600 mb-4">Professional networking and matching platform</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">Social</span>
+            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Professional</span>
+          </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-chart-line text-orange-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold">Mystox11</h3>
+          </div>
+          <p class="text-gray-600 mb-4">Stock trading and financial analysis platform</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Trading</span>
+            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Finance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Skills & Technologies</h2>
+        <div class="w-24 h-1 bg-primary mx-auto"></div>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4 text-gray-900 flex items-center">
+            <i class="fas fa-mobile-alt text-primary mr-3"></i>
+            Mobile Development
+          </h3>
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">React Native</span>
+              <span class="text-primary font-semibold">Expert</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">Apache Cordova</span>
+              <span class="text-primary font-semibold">Expert</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">Android Native</span>
+              <span class="text-primary font-semibold">Advanced</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">iOS Native</span>
+              <span class="text-primary font-semibold">Advanced</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4 text-gray-900 flex items-center">
+            <i class="fas fa-code text-primary mr-3"></i>
+            Frontend Technologies
+          </h3>
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">React</span>
+              <span class="text-primary font-semibold">Expert</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">JavaScript/TypeScript</span>
+              <span class="text-primary font-semibold">Expert</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">HTML/CSS</span>
+              <span class="text-primary font-semibold">Expert</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">Node.js</span>
+              <span class="text-primary font-semibold">Advanced</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4 text-gray-900 flex items-center">
+            <i class="fas fa-cogs text-primary mr-3"></i>
+            Languages & Tools
+          </h3>
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">Java</span>
+              <span class="text-primary font-semibold">Expert</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">Kotlin</span>
+              <span class="text-primary font-semibold">Advanced</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">Swift</span>
+              <span class="text-primary font-semibold">Advanced</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">Git</span>
+              <span class="text-primary font-semibold">Expert</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4 text-gray-900 flex items-center">
+            <i class="fas fa-lightbulb text-primary mr-3"></i>
+            Specializations
+          </h3>
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">Custom SDKs</span>
+              <span class="text-primary font-semibold">Expert</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">Fintech Apps</span>
+              <span class="text-primary font-semibold">Expert</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">Hybrid Architecture</span>
+              <span class="text-primary font-semibold">Expert</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">Team Leadership</span>
+              <span class="text-primary font-semibold">Advanced</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+        <div class="w-24 h-1 bg-primary mx-auto"></div>
+        <p class="text-gray-600 mt-4">Feel free to reach out for collaborations or just a friendly hello!</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-2xl font-semibold mb-6 text-gray-900">Let's Connect</h3>
+          <div class="space-y-6">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
+                <i class="fas fa-envelope text-primary text-xl"></i>
+              </div>
+              <div>
+                <p class="text-gray-600">Email</p>
+                <a href="mailto:ujmobileengineer@outlook.com" class="text-primary hover:text-secondary font-semibold">ujmobileengineer@outlook.com</a>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
+                <i class="fab fa-github text-primary text-xl"></i>
+              </div>
+              <div>
+                <p class="text-gray-600">GitHub</p>
+                <a href="https://github.com/UmeshJangid" target="_blank" class="text-primary hover:text-secondary font-semibold">github.com/UmeshJangid</a>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
+                <i class="fab fa-linkedin text-primary text-xl"></i>
+              </div>
+              <div>
+                <p class="text-gray-600">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/umeshjangid" target="_blank" class="text-primary hover:text-secondary font-semibold">linkedin.com/in/umeshjangid</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-2xl font-semibold mb-6 text-gray-900">What I'm Looking For</h3>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <i class="fas fa-users text-primary mt-1 mr-3"></i>
+              <p class="text-gray-600">Collaboration on Machine Learning & AI for Mobile Applications</p>
+            </div>
+            <div class="flex items-start">
+              <i class="fas fa-code-branch text-primary mt-1 mr-3"></i>
+              <p class="text-gray-600">Contributing to open source projects</p>
+            </div>
+            <div class="flex items-start">
+              <i class="fas fa-rocket text-primary mt-1 mr-3"></i>
+              <p class="text-gray-600">Opportunities to improve development experiences</p>
+            </div>
+            <div class="flex items-start">
+              <i class="fas fa-puzzle-piece text-primary mt-1 mr-3"></i>
+              <p class="text-gray-600">Challenging problems in mobile applications domain</p>
+            </div>
+          </div>
+          <div class="mt-8 p-4 bg-blue-50 rounded-lg">
+            <p class="text-sm text-gray-600 italic">
+              "Sometimes I spend time on blogs too which might get older ;)" - Always learning and sharing knowledge!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Umesh Jangid</h3>
+          <p class="text-gray-400">Mobile Engineering Lead passionate about creating excellent mobile experiences and improving development processes.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+          <div class="space-y-2">
+            <a href="#about" class="text-gray-400 hover:text-white block transition duration-300">About</a>
+            <a href="#projects" class="text-gray-400 hover:text-white block transition duration-300">Projects</a>
+            <a href="#skills" class="text-gray-400 hover:text-white block transition duration-300">Skills</a>
+            <a href="#contact" class="text-gray-400 hover:text-white block transition duration-300">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Connect</h3>
+          <div class="flex space-x-4">
+            <a href="mailto:ujmobileengineer@outlook.com" class="text-gray-400 hover:text-white text-2xl transition duration-300">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/UmeshJangid" target="_blank" class="text-gray-400 hover:text-white text-2xl transition duration-300">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/umeshjangid" target="_blank" class="text-gray-400 hover:text-white text-2xl transition duration-300">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p class="text-gray-400">&copy; 2025 Umesh Jangid. All rights reserved.</p>
+        <p class="text-gray-500 text-sm mt-2">"There is no shortcut to getting the best"</p>
+      </div>
+    </div>
   </footer>
+
+  <!-- Smooth Scrolling Script -->
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add active state to navigation
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('nav a[href^="#"]');
+      
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (window.pageYOffset >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('text-primary');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('text-primary');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
